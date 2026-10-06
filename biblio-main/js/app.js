@@ -26,6 +26,19 @@
 ================================================================
 */
 
+const SUPABASE_URL = "https://rfnrxfdhjmavllythhxz.supabase.co";
+
+// Chave pública do projeto
+// Utilize somente a chave pública destinada ao cliente.
+// NÃO coloque aqui a Service Role Key.
+const SUPABASE_ANON_KEY = "sb_publishable_wIDbX4sQojm0Net7ICqSUg_k80DkjIf";
+
+// Cria a conexão com o Supabase
+const supabaseClient = supabase.createClient(
+SUPABASE_URL,
+SUPABASE_ANON_KEY
+);
+
 
 // ================================================================
 // CONFIGURAÇÕES
